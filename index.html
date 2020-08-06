@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal de Internacionalización de la SICES</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="imagenes/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <nav class="navbar navbarTop sticky-top navbar-expand-lg">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand" href="tel:4726902010">
+                <i class="fas fa-phone"></i><span class="d-none d-md-inline"><small>&nbsp;(472) 690 2010</small></span>
+            </a>
+            <a class="navbar-brand" href="mailto:sices@guanajuato.gob.mx">
+                <i class="far fa-envelope"></i><span class="d-none d-md-inline"><small>&nbsp;CONTÁCTANOS</small></span>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-accessible-icon"></i><span class="d-none d-md-inline"><small>&nbsp;ACCESIBILIDAD</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav fa-ul">
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="https://es-la.facebook.com/sicesgto/" target="_blank">
+                            <span class="fa-li"><i class="fab fa-facebook-square"></i></span>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="https://twitter.com/sicesgto?lang=es" target="_blank">
+                            <span class="fa-li"><i class="fab fa-twitter-square"></i></span>
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCWbQLHv4yrdap1crCjzyc4g" target="_blank">
+                            <span class="fa-li"><i class="fab fa-youtube"></i></span>
+                            <span>Youtube</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-inline">
+                        <a class="nav-link" href="https://es-la.facebook.com/sicesgto/" target="_blank">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-inline">
+                        <a class="nav-link" href="https://twitter.com/sicesgto?lang=es" target="_blank">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-lg-inline">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCWbQLHv4yrdap1crCjzyc4g" target="_blank">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar  navbarMenu navbar-expand-lg p-0">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand p-0" href="/" data-toggle="tooltip" data-placement="bottom" title="Ir al inicio">
+                <img src="imagenes/logo.png" class="py-0" height="120" alt="Ir al inicio">
+            </a>
+            <button class="navbar-toggler mr-3 ml-auto" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse mx-auto" id="navbarMenu">
+                <ul class="navbar-nav mr-2 fa-ul">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="bienvenida" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bienvenida</a>
+                        <div class="dropdown-menu slideDrop" aria-labelledby="bienvenida">
+                            <a class="dropdown-item text-wrap" href="#" data-toggle="modal" data-target="#modal8">
+                                ¿Qué es la Internacionalización en Casa?
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="acciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones de internacionalización</a>
+                        <div class="dropdown-menu slideDrop" aria-labelledby="acciones">
+                            <a class="dropdown-item text-wrap" href="#" data-toggle="modal" data-target="#modal5">Simposio de Innovación e Internacionalización en Casa</a>
+                            <a class="dropdown-item text-wrap" href="#" data-toggle="modal" data-target="#modal6">1er. Encuentro de Innovación y Creatividad para la Internacionalización en Casa</a>
+                            <a class="dropdown-item text-wrap" href="#" data-toggle="modal" data-target="#modal7">2º. Encuentro de Innovación y Creatividad para la Internacionalización en Casa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link dropdown-toggle" href="#" id="experiencias" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experiencias de internacionalización</a>
+                        <div class="dropdown-menu slideDrop" aria-labelledby="experiencias">
+                            <a class="dropdown-item text-wrap" href="#">Ganadores 2017</a>
+                            <a class="dropdown-item text-wrap" href="#">Ganadores 2018</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="invitacion" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Invitacion 2019</a>
+                        <div class="dropdown-menu slideDrop" aria-labelledby="invitacion">
+                            <a class="dropdown-item text-wrap" href="#">Versión Extensa</a>
+                            <a class="dropdown-item text-wrap" href="#">Versión Resumida</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http:/suredsu.guanajuato.gob.mx">Registro de Proyecto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        <div class="row">
+            <div id="carousel" class="carousel slide col-lg-7 slideDown" data-ride="carousel">
+                <div class="carousel-inner mx-auto h-100">
+                    <div class="carousel-item h-100 active">
+                        <h2>
+                            Bienvenido al portal de Internacionalización de la SICES
+                        </h2>
+                        <p>
+                            Con la finalidad de dar a conocer las acciones que en materia de internacionalización se realizan en la Secretaría de Innovación, Ciencia y Educación Superior, hemos diseñado este espacio  donde podrás encontrar información sobre las convocatorias emitidas y  las actividades realizadas a fin de promover el trabajo colaborativo y la internacionalización de los estudiantes de las instituciones de educación superior.
+                        </p>
+                        <div id="carousel1Imgs" class="row">
+                            <div class="col-sm-4">
+                                <div class="img-box border-blue">
+                                    <img class="img" src="imagenes/Image03.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-box border-blue">
+                                    <img class="img" src="imagenes/Image02.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-box border-blue">
+                                    <img class="img" src="imagenes/Image01.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div id="carousel2row" class="row">
+                            <div id="carousel2Imgs" class="col-sm-4">
+                                <div class="img-collage shadows">
+                                    <img class="img border-blue" src="imagenes/Image08.jpg" />
+                                </div>
+                                <div class="img-collage shadows">
+                                    <img class="img border-blue" src="imagenes/Image09.jpg" />
+                                </div>
+                                <div class="img-collage shadows">
+                                    <img class="img border-blue" src="imagenes/Image07.jpg" />
+                                </div>
+                            </div>
+                            <div id="carousel2content" class="col-sm-8">
+                                <h2>
+                                    ¿Qué es la Internacionalización en Casa?
+                                </h2>
+                                <p>
+                                    Se define la Internacionalización en Casa, como un conjunto integrado de acciones en un programa, que brinda a las y los estudiantes la capacidad de aprender, investigar y convivir en un ámbito internacional desde su Institución Educativa, aprovechando los recursos, capacidades y alianzas disponibles, contribuyendo a su formación integral.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <div class="mx-auto" id="carousel3content">
+                            <img class="img" id="img3erEncuentro" src="imagenes/Image14.png" />
+                            <div id="carousel3Imgs" class="w-100">
+                                <div class="img-circle border-blue border-orange-hover">
+                                    <img class="img" src="imagenes/Image23.jpg" />
+                                </div>
+                                <div class="img-circle border-blue border-orange-hover">
+                                    <img class="img" src="imagenes/Image22.jpg" />
+                                </div>
+                                <div class="img-circle border-blue border-orange-hover">
+                                    <img class="img" src="imagenes/Image21.jpg" />
+                                </div>
+                                <div class="img-circle border-blue border-orange-hover">
+                                    <img class="img" src="imagenes/Image20.jpg" />
+                                </div>
+                                <div class="img-circle border-blue border-orange-hover">
+                                    <img class="img" src="imagenes/Image19.jpg" />
+                                </div>
+                            </div>
+                            <button class="btn btn-naranja btn-w-60">Consulta la Invitación</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <h2>
+                            Conoce las acciones que la SICES ha realizado en materia de Internacionalización
+                        </h2>
+                        <div id="carousel4Imgs" class="row mx-auto">
+                            <div class="col-sm-4">
+                                <div class="img-circle border-blue">
+                                    <img class="img" src="imagenes/Image16.jpg" />
+                                </div>
+                                <button class="btn btn-naranja btn-w-90" data-toggle="modal" data-target="#modal5">Simposio</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-circle border-blue">
+                                    <img class="img" src="imagenes/Image18.jpg" />
+                                </div>
+                                <button class="btn btn-naranja btn-w-90" data-toggle="modal" data-target="#modal6">1er. Encuentro</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img-circle border-blue">
+                                    <img class="img" src="imagenes/Image15.jpg" />
+                                </div>
+                                <button class="btn btn-naranja btn-w-90" data-toggle="modal" data-target="#modal7">2°. Encuentro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <h2>
+                            Experiencias de Internacionalización
+                        </h2>
+                        <div id="carousel5Imgs" class="mx-auto">
+                            <img class="img w-100" src="imagenes/collage.png" />
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                    <li data-target="#carousel" data-slide-to="4"></li>
+                </ol>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="menu" class="col-lg-5 d-block slideDown text-right">
+                <div>
+                    <button class="btn btn-naranja btn-menu">Internacionalización en Casa 2019</button>
+                </div>
+                <div id="menu2">
+                    <img class="img menu-curve position-absolute" src="imagenes/imgM0.png" />
+                    <div class="menu-item">
+                        <img class="img img-menu d-inline" src="imagenes/imgM1.png" />
+                        <button class="btn  d-inline" data-toggle="modal" data-target="#modal1">¿Cómo participar?</button>
+                    </div>
+                    <div class="menu-item">
+                        <img class="img img-menu d-inline" src="imagenes/imgM2.png" />
+                        <button class="btn  d-inline" data-toggle="modal" data-target="#modal2">Preguntas frecuentes</button>
+                    </div>
+                    <div class="menu-item">
+                        <img class="img img-menu d-inline" src="imagenes/imgM3.png" />
+                        <button class="btn  d-inline" data-toggle="modal" data-target="#modal3">Cronograma</button>
+                    </div>
+                    <div class="menu-item">
+                        <img class="img img-menu d-inline" src="imagenes/imgM4.png" />
+                        <button class="btn  d-inline" data-toggle="modal" data-target="#modal4">Guía para el registro de proyectos</button>
+                    </div>
+                    <div class="menu-item">
+                        <img class="img img-menu d-inline" src="imagenes/imgM5.png" />
+                        <button class="btn  d-inline" onclick="location.href='http:/suredsu.guanajuato.gob.mx'">Registra tu proyecto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title slideUp">¿Cómo participar en el Encuentro?</h2>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-lg-4 slideUp">
+                                <div class="card-header">
+                                    <div class="img-circle img-card">
+                                        <img class="img" src="imagenes/image15.jpg" />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Estudiantes de las Instituciones de Educación Superior cursando los últimos semestres/cuatrimestres de los programas técnico superior universitario ó licenciatura de cualquier área del conocimiento con el 70% de los créditos del programa académico
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card col-lg-4 slideUp">
+                                <div class="card-header">
+                                    <div class="img-circle img-card">
+                                        <img class="img" src="imagenes/image05.jpg" />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Docentes adscritos a las Instituciones de Educación Superior que cuenten con el apoyo de un docente – tutor en el extranjero
+                                    </p>
+                                    <i class="fas fa-arrows-alt-h" id="flechaDialog1"></i>
+                                </div>
+                            </div>
+                            <div class="card col-lg-4 slideUp">
+                                <div class="card-header">
+                                    <div class="img-circle img-card">
+                                        <img class="img" src="imagenes/image04.jpg" />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Empresa situada el extranjero en lugar de una institución educativa
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-naranja btn-w-30 slideUp">Consulta la Invitación</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title slideUp">Preguntas frecuentes acerca del Encuentro</h2>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-auto max-width-900 slideUp">
+                        <div id="preguntas">
+                            <span class="bold">1. ¿Cuántos equipos puede registrar un docente-tutor(a)?</span>
+                            <p>
+                                El docente-tutor(a) podrá registrar la cantidad de equipos que deseé, sin embargo, deberá considerar acompañar a su(s) equipo(s) durante todas las etapas del encuentro.
+                            </p>
+                            <span class="bold">2. ¿Cuáles son los requisitos para participar?</span>
+                            <p>
+                                Contar con un equipo mínimo de 3 integrantes máximo 5 adicionalmente que cuenten con un 70% de créditos totales del programa académico al cierre de la convocatoria.
+                                Tener contacto con un docente-tutor(a) del extranjero que cuente con un equipo de estudiantes.
+                                Registrar su proyecto y equipo en el Formulario de Registro del Equipo (en idioma inglés) y la fecha límite será el domingo <span class="bold">19 de mayo a las 11:59 pm.</span>
+                            </p>
+                            <span class="bold">3. ¿Tendrá algún costo participar en el 2do. Encuentro de Innovación y Creatividad para la Internacionalización en Casa?</span>
+                            <p>
+                                No, no tiene costo. El evento es gratuito bajo las bases descritas en la convocatoria.
+                            </p>
+                            <span class="bold">4. ¿Cuáles son los criterios de evaluación en la primera etapa?</span>
+                            <p>
+                                El comité evaluador nombrado por la SICES tomará en cuenta del proyecto: que esté redactado en el idioma inglés, asimismo describir los antecedentes, la justificación, los objetivos, la metodología de desarrollo planteada en el proyecto, su alcance, la factibilidad técnica y la innovación. Esto lo puedes consultar en la convocatoria ( <a href="#"><i class="fas fa-file-download"></i>extensa</a> y <a href="#"><i class="fas fa-file-download"></i>resumida</a>).
+                            </p>
+                            <span class="bold">5. En la segunda etapa ¿Qué requisitos se tomarán en cuenta para la presentación del proyecto?</span>
+                            <p>La presentación deberá ser en idioma inglés, en un formato libre donde las y los integrantes del equipo nacional de manera conjunta con las y los estudiantes del extranjero expondrán su proyecto ante el Comité de Evaluación que designe la SICES.</p>
+
+                            <span class="bold">6. ¿En qué consiste el premio?</span>
+                            <p>El premio consiste en otorgar hasta $40,000.00 (Cuarenta mil pesos 00/100 M.N.) a cada participante ganador para que pueda sufragar los gastos para visitar preferentemente la universidad en el extranjero con la que colaboraron y así presentar el Trabajo Final.</p>
+
+                            <p>Los gastos a cubrir serían: traslado aéreo o terrestre, hospedaje, alimentación y traslados terrestres durante la visita que durará hasta 5 días.</p>
+
+                            <span class="bold">7. En caso de que mi equipo resulte ganador ¿La SICES brindará el apoyo para el trámite de pasaporte, visa y seguro de gastos médicos internacional?</span>
+                            <p>El pago de tarifas y trámite correrán a cargo de cada integrante del equipo ganador y cada docente-tutor(a) será responsable de que sus alumnos(as) cumplan con los documentos necesarios para salir del país</p>
+                            <span class="bold">8. ¿A cuántos equipos se premiarán?</span>
+                            <p>La premiación de los equipos estará en función del presupuesto asignado de la SICES para esta convocatoria.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content mb-5">
+                    <div class="modal-header">
+                        <h2 class="modal-title slideUp">Cronograma del Encuentro</h2>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-4 slideUp">
+                        <div id="cronograma" class="text-left">
+                            <table class="mx-auto">
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Actividad</th>
+                                </tr>
+                                <tr>
+                                    <td>30 de junio  de 2019</td>
+                                    <td>Último día para registrarse</td>
+                                </tr>
+                                <tr>
+                                    <td>11 de agosto de 2019</td>
+                                    <td>Envío del Trabajo Final</td>
+                                </tr>
+                                <tr>
+                                    <td>12 al 30 de agosto de 2019</td>
+                                    <td>Periodo de Evaluación (Primera etapa)</td>
+                                </tr>
+                                <tr>
+                                    <td>2 de septiembre de 2019</td>
+                                    <td>Resultados de la Primera Etapa</td>
+                                </tr>
+                                <tr>
+                                    <td>12 y 13 de septiembre de 2019</td>
+                                    <td>Presentación  en Inglés de los Proyectos Finalistas</td>
+                                </tr>
+                                <tr>
+                                    <td>17 de septiembre de 2019</td>
+                                    <td>Notificación de Equipos Ganadores</td>
+                                </tr>
+                                <tr>
+                                    <td>24 de noviembre al 22 de diciembre de 2019</td>
+                                    <td>Viaje al Extranjero</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <h2 class="modal-title slideUp">Guía para el registro de proyectos</h2>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body slideUp">
+                        <div id="guia">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content mb-5">
+                    <div class="modal-header">
+                        <h2 class="modal-title slideUp">Simposio de Innovación e Internacionalización en Casa</h2>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-auto max-width-900 slideUp">
+                        <div id="simposio">
+                            <p>Con la finalidad de fortalecer la internacionalización en casa y la movilidad en educación superior a través de la sensibilización de los estudiantes, el 20 de marzo del 2018  se realizó el <span class="bold">Primer Simposio sobre Innovación e Internacionalización en Casa</span>  en las instalaciones de la División de Ingeniería Campus Irapuato-Salamanca de la Universidad de Guanajuato,  contando con la participación de 250 personas entre estudiantes, docentes y directivos de instituciones de educación superior.</p>
+                            <p>Este evento propició un intercambio de experiencias para incentivar la participación de alumnos y docentes de las instituciones de educación superior en el programa de internacionalización en casa, que potencia la innovación y ejecución de proyectos respaldado por la intervención de expertos en la materia que permita a los participantes tener una visión integral del tema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content mb-5">
+                    <div class="modal-header mx-auto">
+                        <div id="encuentro1head">
+                            <img class="img img-1encuentro-logo slideUp" src="imagenes/image26.png" />
+                            <h2 class="modal-title slideUp">1er. Encuentro de Innovación y Creatividad para la Internacionalización en Casa</h2>
+                        </div>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-auto max-width-900 slideUp">
+                        <div id="encuentro1">
+                            <p>En el 2017 se llevó a cabo el Primer Encuentro, teniendo una participación de 12 instituciones de educación superior, 10 públicas y 2 particulares.</p>
+                            <p>Se registraron 23 proyectos en colaboración con 9 países y fueron premiados 3 equipos</p>
+                            <img class="img img-1encuentro" src="imagenes/image33.png" />
+                            <img class="img img-1encuentro" src="imagenes/image32.png" />
+                            <img class="img img-1encuentro" src="imagenes/image34.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title slideUp">Guía para el registro de proyectos</h2>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-auto max-width-900 slideUp">
+                        <div id="encuentro2">
+                            <img class="img" id="img-2encuentro" src="imagenes/image30.png" />
+                            <p>
+                                En el 2018 Se tuvo la participación de 23 instituciones de educación superior, 19 públicas y 4 particulares, con 46 proyectos en colaboración con 21 países.
+                            </p>
+                            <p>
+                                Con los proyectos registrados se tuvo una participación de:<br />
+                                &bull;225 participantes de Guanajuato (179 estudiantes y 46 tutores) y
+                                <br />
+                                &bull;110 participantes del extranjero (64 estudiantes y 46 tutores)
+                            </p>
+                            <p>
+                                Fueron 10 equipos ganadores, beneficiándose a 10 docentes y 35 estudiantes que desarrollaron  proyectos colaborativos con instituciones de países como: Alemania, Chile, Colombia, Ecuador, España, Estados Unidos de América y Reino Unido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content mb-5">
+                    <div class="modal-header">
+                        <h2 class="modal-title slideUp">¿Qué es la Internacionalización en Casa?</h2>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-auto max-width-900 slideUp">
+                        <div id="quees">
+                            <p>
+                                Se define la Internacionalización en Casa, como un conjunto integrado de acciones en un programa, que brinda a las y los estudiantes la capacidad de aprender, investigar y convivir en un ámbito internacional desde su Institución Educativa, aprovechando los recursos, capacidades y alianzas disponibles, contribuyendo a su formación integral.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+
+</body>
+</html>
